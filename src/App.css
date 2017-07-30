@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.suggestion-item:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.suggestion-list > :first-child {
+  background-color: lightblue;
+}
+
+.suggestion-list:hover > :first-child {
+  background-color: transparent;
+}
+
+.suggestion-list:hover > .suggestion-item:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.error-bnm-input {
+  border-color: red;
+}
+
+.error-bnm-text {
+  color: red;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+.search-form {
+  width: 300px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.search-spinner {
+  animation: search-spin infinite 2s linear;
+  height: 10px;
+  width: 10px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  border-top-color: transparent;
+}
+
+@keyframes search-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
